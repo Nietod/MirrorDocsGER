@@ -8,7 +8,7 @@ coverY: 0
 
 {% hint style="success" %}
 **Mach dir keine Gedanken mehr übers Netzwerken, denn das übernehmen wir.**\
-Wir brauchten eine Netzwerkbibliothek, die es uns erlaubte [**unsere Spiele zu veröffentlichen**](https://github.com/MirrorNetworking/Mirror#made-with-mirror) und **das nächste Jahrzent zu überstehen**.
+Wir brauchten eine Netzwerkbibliothek, die es uns ermöglichte, [**unsere Spiele zu veröffentlichen**](https://github.com/MirrorNetworking/Mirror#made-with-mirror) und **das nächste Jahrzehnt zu überstehen**.
 {% endhint %}
 
 [**Mirror**](https://assetstore.unity.com/packages/tools/network/mirror-129321) ist eine **high level** Netzwerkbibliothek für Unity, optimiert für **einfache Nutzung** & **Erfolgswahrscheinlichkeit**.
@@ -25,7 +25,7 @@ Wir brauchten eine Netzwerkbibliothek, die es uns erlaubte [**unsere Spiele zu v
 
 ## Unity Versionen
 
-Wir werden uns an die Unterstützung von Unity für **LTS Versionen** halten. Alle darüber hinausgehenden Versionen können funktionieren, aber Sie sind auf sich allein gestellt, insbesondere in Bezug auf Preview-/Beta-Versionen.
+Wir werden uns an die Unterstützung von Unity für **LTS Versionen** halten. Alle Versionen darüber hinaus können funktionieren, aber du bist auf dich allein gestellt, insbesondere in Bezug auf Preview-/Beta-Versionen.
 
 Derzeit empfehlen wir die Verwendung von Unity 2020 oder 2021 LTS.
 
