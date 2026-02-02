@@ -13,6 +13,7 @@
   * [Getting Started](manual/general/getting-started.md)
   * [Script Templates](manual/general/script-templates.md)
   * [Change Log](manual/general/changelog/README.md)
+    * [2025 Change Log](manual/general/changelog/2025-change-log.md)
     * [2024 Change Log](manual/general/changelog/2024-change-log.md)
     * [2023 Change Log](manual/general/changelog/2023-change-log.md)
     * [2022 Change Log](manual/general/changelog/2022-change-log.md)
@@ -86,6 +87,7 @@
     * [Network Owner Checker](manual/components/deprecated/network-owner-checker.md)
 * [Interest Management](manual/interest-management/README.md)
   * [Spatial Hashing](manual/interest-management/spatial-hashing.md)
+  * [Hex Spatial Hashing](manual/interest-management/hex-spatial-hashing.md)
   * [Distance](manual/interest-management/distance.md)
   * [Scene](manual/interest-management/scene.md)
   * [Scene + Distance](manual/interest-management/scene-+-distance.md)
@@ -138,7 +140,7 @@
   * [Google Cloud](hosting/server-hosting/google-cloud.md)
   * [Oracle Free Tier](hosting/server-hosting/oracle-free-tier.md)
 * [Hosting with a Remote Desktop](hosting/hosting-with-a-remote-desktop.md)
-* [Edgegap Hosting Plugin Guide](hosting/edgegap-hosting-plugin-guide.md)
+* [Edgegap’s Dedicated Game Server Hosting – Plugin Guide](hosting/edgegap-hosting-plugin-guide.md)
 
 ## Security
 
