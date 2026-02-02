@@ -1,14 +1,14 @@
-# Documentation License
+# Dokumentationslizenz
 
-Mirror is MIT licensed
+Mirror unterliegt der MIT Lizenz.
 
-The documentation is also MIT licensed.
-
-
+Die Dokumentation unterliegt ebenfalls der MIT Lizenz.
 
 
 
-MIT License
+
+
+**MIT License**
 
 Copyright (c) 2015, Unity Technologies Copyright (c) 2019, vis2k, Paul and Contributors
 
