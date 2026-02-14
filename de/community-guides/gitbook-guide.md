@@ -44,7 +44,7 @@ $$
 
 ### Bilder
 
-![Image Description (optional)](<../../.gitbook/assets/image (55).png>)
+![Bildunterschrift (optional)](<../../.gitbook/assets/image (55).png>)
 
 ### Tabellen
 
