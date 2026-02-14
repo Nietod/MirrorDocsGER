@@ -1,13 +1,13 @@
 ---
-description: Useful tip by 'Nimbat'
+description: Nützlicher Tipp von „Nimbat“
 ---
 
 # Odin Inspector Support
 
-If you are trying use Mirror together with Odin Inspector:
+Wenn du versuchst Mirror gemeinsam mit dem Odin Inspector zu verwenden:
 
-Change `NetworkBehaviourInspector :`` `**`Editor`** to:
+Verändere `NetworkBehaviourInspector :`` `**`Editor`** zu:
 
 `NetworkBehaviourInspector :`` `**`OdinEditor`**
 
-Then it should work!
+Dann sollte es funktionieren!
