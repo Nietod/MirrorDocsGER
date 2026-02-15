@@ -1,6 +1,6 @@
 # Mirror Docker Leitfaden
 
-Um Unity mit Docker zu verwenden, kannst ud diesen Leitfaden probieren:
+Um Unity mit Docker zu verwenden, kannst du diesen Leitfaden ausprobieren:
 
 {% embed url="https://docs.edgegap.com/docs/tools-and-integrations/unity-server-in-docker" %}
 
