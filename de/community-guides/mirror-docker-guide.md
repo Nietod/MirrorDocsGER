@@ -1,12 +1,12 @@
-# Mirror Docker Guide
+# Mirror Docker Leitfaden
 
-To use Unity with Docker, you can try this Guide:
+Um Unity mit Docker zu verwenden, kannst ud diesen Leitfaden probieren:
 
 {% embed url="https://docs.edgegap.com/docs/tools-and-integrations/unity-server-in-docker" %}
 
-Additionally, our friend Andrew Allbright shared a sample with Mirror running on Docker + Docker Compose:
+Außerdem hat unser Freund Andrew Allbright ein Beispiel von Mirror mit Docker + Docker Compose geteilt:
 
-> The Mirror server is built as a dedicated linux server build and runs on an ubuntu server. The webGL assets are served from an nginx server. Another nginx container serves as a reverse proxy, so that the websocket connection is accepted.
+> Der Mirror-Server ist als dedizierter Linux-Server aufgebaut und läuft auf einem Ubuntu-Server. Die WebGL-Assets werden von einem Nginx-Server bereitgestellt. Ein weiterer Nginx-Container dient als Reverse-Proxy, damit die WebSocket-Verbindung akzeptiert wird.
 
 {% embed url="https://github.com/aallbrig/unity-mirror-networking-containerized" %}
 
