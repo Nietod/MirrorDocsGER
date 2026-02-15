@@ -2,25 +2,25 @@
 
 **iOS AppStore UDP**
 
-Mirror's default kcp Transport uses UDP sockets.\
-When submitting your App to the App Store review process for the first time, some people's apps get rejected because Apple's VPN can't seem to handle UDP.
+Mirrors standardmäßig eingesetzter KCP-Transport nutzt UDP-Sockets.\
+Wenn du deine App zum ersten Mal zur Überprüfung im App Store einreichst, werden einige Apps abgelehnt, weil der VPN von Apple offenbar nicht mit UDP umgehen kann.
 
-It's not obvious to us why that is, but here are a few workarounds that people suggested:
+Wir wissen, warum das so ist, aber hier sind ein paar Workarounds, die einige vorschlagen:
 
-* cooper: "Submit your App with a TCP transport like Telepathy. Once approved, switch to KCP again in the next update. Supposedly this works."
-* Ninja: "The app reviews kept getting rejected until I essentially asked for manual intervention, and then it passed"
-* Use multiplexer for apple release, for example kcp as main and telepathy as backup transport.
+* cooper: "Reiche deine App mit einem TCP-Transport wie Telepathy ein. Nach erfolgreicher Überprüfung wechsel beim nächsten Update wieder zu KCP. Das sollte funktionieren."
+* Ninja: "Die Überprüfung der App ist immer wieder fehlgeschlagen, bis ich schließlich um eine manuelle Überprüfung gebeten habe, danach wurde sie genehmigt."
+* Nutze den Multiplex-Transport für Veröffentlichungen im App Store, zum Beispiel KCP als primären Transport und Telepathy als Backup-Transport.
 
-**iOS AppStore LAN Broadcasting**
+**iOS AppStore LAN-Übertragung**
 
-Follow the Xcode instructions to get the multicast networking permission from Apple.
+Folge den Anweisungen von Xcode, um die Multicast-Netzwerkberechtigung von Apple zu erhalten.
 
-Add it to the app provisioning, then add the capability to the app itself, making sure you've properly added the entitlement to your app in Xcode.
+Füge es zunächst dem App-Provisioning hinzu und aktiviere anschließend die entsprechende Capability in der App selbst. Stelle dabei sicher, dass das erforderliche Entitlement in Xcode korrekt hinterlegt ist.
 
-Latest versions may need this: Add NSLocalNetworkUsageDescription to the info.plist.
+Die neuesten Versionen brauchen möglicherweise Folgendes:  Füge NSLocalNetworkUsageDescription zu der info.plist hinzu.
 
 \
-Note: If LAN Broadcasting does not work, try another address, for example, change 0.0.0.0 to 255.255.255.255  (remember to rebuild after changing)
+Hinweise: Wenn LAN-Übertragung nicht funktioniert, versuche eine andere Adresse, ändere zum Beispiel 0.0.0.0 zu 255.255.255.255 (Denke daran nach jeder Änderung die App neu zu bauen)
 
-This should get Network Discovery features working, Kudos to overmatch-iman, Sylvain and other Discord users for reporting back the working steps.
+Damit sollten die Netzwerk-Erkennungsfunktionen funktionieren. Ein großes Lob an overmatch-iman, Sylvain und andere Discord-Nutzer, die die funktionierenden Schritte geteilt haben.
 
