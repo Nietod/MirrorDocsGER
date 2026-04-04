@@ -1,3 +1,0 @@
-# HA Proxy
-
-Content Needed
