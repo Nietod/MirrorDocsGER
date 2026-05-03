@@ -10,7 +10,7 @@ Normaler Text kann auch [Links](https://github.com/vis2k/Mirror) enthalten.
 
 ### Gitbook wichtige Guides
 
-* Save & Merge: [https://gyazo.com/cc284fcb5ba5087dbdead8579433a591](https://gyazo.com/cc284fcb5ba5087dbdead8579433a591)
+* Speichern & Verbinden: [https://gyazo.com/cc284fcb5ba5087dbdead8579433a591](https://gyazo.com/cc284fcb5ba5087dbdead8579433a591)
 * Links zu Kapiteln: [https://gyazo.com/37bbe0b8d604594afda60a38d57e23dc](https://gyazo.com/37bbe0b8d604594afda60a38d57e23dc)
 
 ### Tipps
