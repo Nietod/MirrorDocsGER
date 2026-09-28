@@ -8,7 +8,7 @@ coverY: 0
 
 {% hint style="success" %}
 **Mach dir keine Gedanken mehr übers Netzwerken, denn das übernehmen wir.**\
-Wir brauchten eine Netzwerkbibliothek, die es uns ermöglichte, [**unsere Spiele zu veröffentlichen**](https://github.com/MirrorNetworking/Mirror#made-with-mirror) und **das nächste Jahrzehnt zu überstehen**.
+Wir brauchten eine Netzwerkbibliothek, mit der wir [**unsere Spiele veröffentlichen**](https://github.com/MirrorNetworking/Mirror#made-with-mirror) und **das nächste Jahrzehnt überstehen** können.
 {% endhint %}
 
 [**Mirror**](https://assetstore.unity.com/packages/tools/network/mirror-129321) ist eine **high level** Netzwerkbibliothek für Unity, optimiert für **einfache Nutzung** & **Erfolgswahrscheinlichkeit**.
