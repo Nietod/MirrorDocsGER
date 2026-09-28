@@ -14,7 +14,7 @@ Wir brauchten eine Netzwerkbibliothek, die es uns ermöglichte, [**unsere Spiele
 [**Mirror**](https://assetstore.unity.com/packages/tools/network/mirror-129321) ist eine **high level** Netzwerkbibliothek für Unity, optimiert für **einfache Nutzung** & **Erfolgswahrscheinlichkeit**.
 
 * Kompatibel mit über ein Dutzend low level [**Transports**](manual/transports/).
-* Wachsende Bibliothek von [**Script Vorlagen**](manual/general/script-templates.md) um lernen und programmieren einfacher zu machen.
+* Wachsende Bibliothek von [**Skriptvorlagen**](manual/general/script-templates.md) um lernen und programmieren einfacher zu machen.
 * Remote Procedure Calls und Kontextsteuerung über [**Attribute**](manual/guides/attributes.md).
 * Mehr als ein Dutzend integrierte [**Komponenten**](manual/components/).
 * Fünf Varianten von [**Interest Management**](manual/interest-management/), die Möglichkeit, eine eigene benutzerdefinierte Version zu erstellen.
