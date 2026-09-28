@@ -50,7 +50,7 @@ For more details about networked instantiating and spawning, see documentation o
 
 Mirror handles player game objects differently to non-player game objects. When a new player joins the game (when a new client connects to the server), that player’s game object becomes a “local player” game object on the client of that player, and Mirror associates the player’s connection with the player’s game object. Mirror associates one player game object for each person playing the game, and routes networking commands to that individual game object. A player cannot invoke a command on another player’s game object, only their own.
 
-For more details, see documentation on Player [GameObjects](../guides/gameobjects/).
+For more details, see documentation on [Player GameObjects](../guides/gameobjects/player-gameobjects.md).
 
 ## Authority
 
