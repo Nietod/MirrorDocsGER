@@ -8,7 +8,7 @@ Sieh dir diese [großartigen Videos](../../community-guides/video-tutorials.md) 
 
 ## Skriptvorlagen <a href="#script-templates" id="script-templates"></a>
 
-* Erstelle neue Network Behaviours und andere gängige Skripte schneller
+* Erstelle neue NetworkBehaviours und andere gängige Skripte schneller
 
 Siehe [Skriptvorlagen](script-templates.md).
 
@@ -58,7 +58,7 @@ public class Controls : NetworkBehaviour
 ## Grundlegender Spielzustand des Spielers <a href="#basic-player-game-state" id="basic-player-game-state"></a>
 
 * Mache Skripte, die wichtige Daten enthalten, zu NetworkBehaviours statt MonoBehaviours
-* Mache wichtige Klassenvariablen zu SyncVars 
+* Mache wichtige Klassenvariablen zu SyncVars
 
 Siehe [Zustandssynchronisation](../guides/synchronization/).
 
