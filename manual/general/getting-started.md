@@ -1,43 +1,43 @@
-# Getting Started
+# Erste Schritte
 
-This document describes steps to creating a multiplayer game with Mirror. The process described here is a simplified, higher level version of the actual process for a real game; it doesn’t always work exactly like this, but it provides a basic recipe for the process.
+Dieses Dokument beschreibt Schritte, wie du mit Mirror ein Mehrspielerspiel erstellst. Der Ablauf ist eine vereinfachte und übergeordnete Fassung dessen, was bei einem echten Spiel nötig ist. In der Praxis läuft nicht immer alles genau so ab, aber du bekommst damit eine Grundlage für dein eigenes Vorgehen.
 
-## Video Tutorials <a href="#video-tutorials" id="video-tutorials"></a>
+## Videotutorials <a href="#video-tutorials" id="video-tutorials"></a>
 
-Check out these [awesome videos](../../community-guides/video-tutorials.md) showing you how to get started with mirror.
+Sieh dir diese [großartigen Videos](../../community-guides/video-tutorials.md) an, die dir den Einstieg in Mirror zeigen.
 
-## Script Templates <a href="#script-templates" id="script-templates"></a>
+## Skriptvorlagen <a href="#script-templates" id="script-templates"></a>
 
-* Create new Network Behaviours and other common scripts faster
+* Erstelle neue Network Behaviours und andere gängige Skripte schneller
 
-See [Script Templates](script-templates.md).
+Siehe [Skriptvorlagen](script-templates.md).
 
-## Network Manager Setup <a href="#networkmanager-set-up" id="networkmanager-set-up"></a>
+## Network Manager einrichten <a href="#networkmanager-set-up" id="networkmanager-set-up"></a>
 
-* Create a new Network Manager from the [Assets > Create > Mirror](script-templates.md) menu.
-* Add a new game object to the Scene and rename it “NetworkManager”.
-* Add the newly created Network Manager component to the “NetworkManager” game object.
-* Add the [NetworkManagerHUD](../components/network-manager-hud.md) component to the game object. This provides the default UI for managing the network game state.
+* Erstelle einen neuen Network Manager über das Menü [Assets > Create > Mirror](script-templates.md).
+* Füge der Szene ein neues GameObject hinzu und benenne es in „NetworkManager“ um.
+* Füge dem GameObject „NetworkManager“ die neu erstellte Network-Manager-Komponente hinzu.
+* Füge dem GameObject die Komponente [NetworkManagerHUD](../components/network-manager-hud.md) hinzu. Sie stellt die Standardoberfläche bereit, mit der du den Zustand des Netzwerkspiels verwaltest.
 
-See [Using the NetworkManager](../components/network-manager.md).
+Siehe [Den NetworkManager verwenden](../components/network-manager.md).
 
-## Player Prefab <a href="#player-prefab" id="player-prefab"></a>
+## Spieler-Prefab <a href="#player-prefab" id="player-prefab"></a>
 
-* Find the Prefab for the player game object in the game, or create a Prefab from the player game object
-* Add the NetworkIdentity component to the player Prefab
-* Set the `Player Prefab` in the NetworkManager’s Spawn Info section to the player Prefab
-* Remove the player game object instance from the Scene if it exists in the Scene
+* Suche das Prefab für das Spieler-GameObject in deinem Spiel oder erstelle ein Prefab aus dem Spieler-GameObject
+* Füge dem Spieler-Prefab die Komponente NetworkIdentity hinzu
+* Weise im Abschnitt „Spawn Info“ des NetworkManager dem Feld `Player Prefab` das Spieler-Prefab zu
+* Entferne die Instanz des Spieler-GameObjects aus der Szene, falls sie dort vorhanden ist
 
-See [Player Objects](../guides/gameobjects/player-gameobjects.md) for more information.
+Mehr dazu findest du unter [Spieler-GameObjects](../guides/gameobjects/player-gameobjects.md).
 
-## Player Movement <a href="#player-movement" id="player-movement"></a>
+## Spielerbewegung <a href="#player-movement" id="player-movement"></a>
 
-* Add a NetworkTransform component to the player Prefab
-* Check the Client Authority checkbox on the component.
-* Update input and control scripts to respect `isLocalPlayer`
-* Override OnStartLocalPlayer to take control of the Main Camera in the scene for the player.
+* Füge dem Spieler-Prefab die Komponente NetworkTransform hinzu
+* Aktiviere an der Komponente die Checkbox „Client Authority“.
+* Passe Eingabe- und Steuerungsskripte so an, dass sie `isLocalPlayer` berücksichtigen
+* Überschreibe OnStartLocalPlayer, um für den Spieler die Kontrolle über die Main Camera der Szene zu übernehmen.
 
-For example, this script only processes input for the local player:
+Dieses Skript verarbeitet zum Beispiel nur die Eingaben des lokalen Spielers:
 
 ```csharp
 using UnityEngine;
@@ -55,36 +55,36 @@ public class Controls : NetworkBehaviour
 }
 ```
 
-## Basic player game state <a href="#basic-player-game-state" id="basic-player-game-state"></a>
+## Grundlegender Spielzustand des Spielers <a href="#basic-player-game-state" id="basic-player-game-state"></a>
 
-* Make scripts that contain important data into Network Behaviours instead of MonoBehaviours
-* Make important member variables into SyncVars
+* Mache Skripte, die wichtige Daten enthalten, zu NetworkBehaviours statt MonoBehaviours
+* Mache wichtige Klassenvariablen zu SyncVars 
 
-See [State Synchronization](../guides/synchronization/).
+Siehe [Zustandssynchronisation](../guides/synchronization/).
 
 ## Remote Actions <a href="#networked-actions" id="networked-actions"></a>
 
-* Make scripts that perform important actions into Network Behaviours instead of MonoBehaviours
-* Update functions that perform important player actions to be commands
+* Mache Skripte, die wichtige Aktionen ausführen, zu NetworkBehaviours statt MonoBehaviours
+* Wandle Funktionen, die wichtige Spieleraktionen ausführen, in Commands um
 
-See [Remote Actions](../guides/communications/remote-actions.md).
+Siehe [Remote Actions](../guides/communications/remote-actions.md).
 
-## Non-player GameObjects <a href="#non-player-game-objects" id="non-player-game-objects"></a>
+## GameObjects, die keine Spieler sind <a href="#non-player-game-objects" id="non-player-game-objects"></a>
 
-Fix non-player prefabs such as enemies:
+Passe Prefabs an, die keine Spieler sind, zum Beispiel Gegner:
 
-* Add the NetworkIdentity component
-* Add the NetworkTransform component
-* Register spawnable Prefabs with the NetworkManager
-* Update scripts with game state and actions
+* Füge die Komponente NetworkIdentity hinzu
+* Füge die Komponente NetworkTransform hinzu
+* Registriere spawnbare Prefabs beim NetworkManager
+* Passe Skripte mit Spielzustand und Aktionen an
 
-## Spawners <a href="#spawners" id="spawners"></a>
+## Spawner <a href="#spawners" id="spawners"></a>
 
-* Potentially change spawner scripts to be NetworkBehaviours
-* Modify spawners to only run on the server (use isServer property or the `OnStartServer()` function)
-* Call `NetworkServer.Spawn()` for created game objects
+* Mache Spawner-Skripte gegebenenfalls zu NetworkBehaviours
+* Ändere Spawner so, dass sie nur auf dem Server laufen (nutze die Eigenschaft isServer oder die Funktion `OnStartServer()`)
+* Rufe für erstellte GameObjects `NetworkServer.Spawn()` auf
 
-## Spawn positions for players <a href="#spawn-positions-for-players" id="spawn-positions-for-players"></a>
+## Spawnpositionen für Spieler <a href="#spawn-positions-for-players" id="spawn-positions-for-players"></a>
 
-* Add a new game object and place it at player’s start location
-* Add the NetworkStartPosition component to the new game object
+* Füge ein neues GameObject hinzu und platziere es an der Startposition des Spielers
+* Füge dem neuen GameObject die Komponente NetworkStartPosition hinzu
