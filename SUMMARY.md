@@ -149,7 +149,7 @@
 ## Community Leitfäden
 
 * [Community Übersetzungen](community-guides/community-translations.md)
-* [Video Tutorials](community-guides/video-tutorials.md)
+* [Videotutorials](community-guides/video-tutorials.md)
 * [Ressourcen](community-guides/resources.md)
 * [Mirror Schnellstart Projekt](community-guides/quick-start-guide.md)
 * [Unity für MMORPGs](community-guides/unity-for-mmorpgs.md)
