@@ -1,24 +1,26 @@
 ---
-description: 'One of the most frequently asked questions: how many CCU can Mirror handle?'
+description: 'Eine der am häufigsten gestellten Fragen: Wie viele CCU schafft Mirror?'
 ---
 
 # CCU
 
-A similar question came up on the [Unity forums](https://forum.unity.com/threads/stress-test-using-unity-as-server.1126640/#post-7245842) a while ago, so I'll copy my answer here in case it's useful to anyone else.
+Eine ähnliche Frage kam vor einiger Zeit in den [Unity-Foren](https://forum.unity.com/threads/stress-test-using-unity-as-server.1126640/#post-7245842) auf, deshalb kopiere ich meine Antwort hierher, falls sie noch jemandem nützt.
 
-One of the MMOs [made with Mirror](https://github.com/vis2k/Mirror#made-with-mirror) had quite a lot of CCU when it launched, I think it was Inferna.\
-They split the map into separate server instances, with around 200 CCU limit per map.\
-I would have to look it up again, but I believe they achieved around 1000 CCU per world this way at times.\
+![Unser ruckelnder Test mit 480 CCU aus dem Jahr 2019](../../.gitbook/assets/2021-06-17\_12-24-46@2x.png)
+
+Eines der [mit Mirror entwickelten](https://github.com/vis2k/Mirror#made-with-mirror) MMOs hatte zum Start ziemlich viele CCU, ich glaube, es war Inferna.\
+Sie haben die Karte in getrennte Serverinstanzen aufgeteilt, mit einem Limit von etwa 200 CCU pro Karte.\
+Ich müsste es noch einmal nachschlagen, aber ich glaube, auf diese Weise wurden zeitweise rund 1000 CCU pro Welt erreicht.\
 \
-There's also a [very old video](https://www.youtube.com/watch?v=mDCNff1S9ZU\&t=58s) of us trying 480 CCU worst case, all in one place like your video. It's laggy as hell, but the server survived just fine.\
+Es gibt außerdem ein [sehr altes Video](https://www.youtube.com/watch?v=mDCNff1S9ZU\&t=58s), in dem wir den schlimmsten Fall mit 480 CCU ausprobieren, alle an einem Ort wie in deinem Video. Es ruckelt höllisch, aber der Server hat problemlos durchgehalten.\
 \
-Both Inferna and the 480 CCU video use old Mirror & Unity versions. We've had years of improvements since then, both for Mirror, Unity and server hardware.\
+Sowohl Inferna als auch das Video mit 480 CCU nutzen alte Versionen von Mirror und Unity. Seitdem gab es jahrelang Verbesserungen bei Mirror, Unity und der Serverhardware.\
 \
-We still have plenty of optimizations to squeeze out of Mirror, with another CCU test planned afterwards around the end of this year.\
+Aus Mirror lassen sich noch jede Menge Optimierungen herausholen. Danach ist etwa gegen Ende dieses Jahres ein weiterer CCU-Test geplant.\
 \
-Keep in mind that your game's complexity is also a huge factor. A 3D physics movement MMO like WoW will be way harder to scale than a 2D click-to-move MMO. For an Indie developer, 2D is really worth considering. It's way cheaper, way easier to make and scales way better due to less complex physics/meshes etc.\
+Bedenke, dass auch die Komplexität deines Spiels eine große Rolle spielt. Ein 3D-MMO mit physikbasierter Bewegung wie WoW lässt sich deutlich schwerer skalieren als ein 2D-MMO mit Click-to-Move-Steuerung. Für Indie-Entwickler ist 2D wirklich eine Überlegung wert. Es ist deutlich günstiger, viel einfacher umzusetzen und skaliert dank weniger komplexer Physik, Meshes usw. wesentlich besser.\
 \
-At the end of the day, there's definitely a limit to what we can achieve in MonoBehaviour world.\
-For 1500 physics movement players like in WoW, you would definitely need DOTS or a server that does not run in Unity.\
+Letztendlich gibt es in der MonoBehaviour-Welt definitiv eine Grenze für das, was wir erreichen können.\
+Für 1500 Spieler mit physikbasierter Bewegung wie in WoW bräuchtest du auf jeden Fall DOTS oder einen Server, der nicht in Unity läuft.\
 \
-Imho Unity & MonoBehaviour is still a good option. Better to **release** even a 500 CCU MMO with 250 CCU per instance, than **never release** a 1500 CCU MMO.
+Meiner Meinung nach sind Unity und MonoBehaviour trotzdem eine gute Wahl. Es ist besser, ein MMO mit nur 500 CCU und 250 CCU pro Instanz zu **veröffentlichen**, als ein MMO mit 1500 CCU **nie zu veröffentlichen**.
