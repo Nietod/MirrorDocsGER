@@ -1,22 +1,28 @@
-# Script Vorlagen
+# Skriptvorlagen
 
 {% hint style="info" %}
-As of August 2023, Unity Asset Store does not allow us to upload ScriptTemplates anymore. Import this package to add them to your project.
+Seit August 2023 erlaubt uns der Unity Asset Store nicht mehr, ScriptTemplates hochzuladen. Importiere dieses Paket, um sie deinem Projekt hinzuzufügen.
 
-* You must **restart Unity** after importing this package for Unity to wire up the menus.
+* Nach dem Import dieses Pakets musst du **Unity neu starten**, damit Unity die Menüs einbindet.
 {% endhint %}
+
+{% file src="../../.gitbook/assets/ScriptTemplates.zip" %}
+ScriptTemplates-Unity-Paket
+{% endfile %}
 
 {% hint style="warning" %}
-**Root Folder Required:** ScriptTemplates is a special folder to Unity and must remain in the Assets folder.
+**Stammordner erforderlich:** ScriptTemplates ist für Unity ein besonderer Ordner und muss im Assets-Ordner bleiben.
 {% endhint %}
 
-We've added Script Templates to make it easier to create derived class scripts that inherit from our base classes.
+Wir haben Skriptvorlagen hinzugefügt, damit sich Skripte mit abgeleiteten Klassen, die von unseren Basisklassen erben, leichter erstellen lassen.
 
-* All possible overrides are already made for you and organized.
-* They're all fully commented as to what they all do.
-* Base method calls are all in place where needed so you can see what they already do.
-* Each has links at the top to their doc page(s).
+* Alle möglichen Überschreibungen sind bereits für dich angelegt und geordnet.
+* Alle sind vollständig kommentiert, sodass du siehst, was sie jeweils tun.
+* Die Aufrufe der Basismethoden stehen überall dort, wo sie nötig sind, sodass du siehst, was diese bereits erledigen.
+* Jede Vorlage enthält oben Links zu den zugehörigen Dokumentationsseiten.
 
-The **Mirror** section will appear under the **Assets > Create menu**, as well as the context menu that comes up when you right-click on any folder in your project. You'll be prompted for the file name like any other asset creation.
+Der Abschnitt **Mirror** erscheint im Menü **Assets > Create** sowie im Kontextmenü, das sich öffnet, wenn du mit der rechten Maustaste auf einen beliebigen Ordner in deinem Projekt klickst. Wie bei jedem anderen neuen Asset wirst du nach dem Dateinamen gefragt.
 
-Hopefully these templates will be helpful to new users of Mirror to learn what methods are available in various classes, as well as just being more convenient for everyone.
+![Menü für die Mirror-Skriptvorlagen](<../../.gitbook/assets/image (1) (1) (1).png>)
+
+Hoffentlich erleichtern diese Vorlagen neuen Mirror-Nutzern das Kennenlernen der verfügbaren Methoden in den verschiedenen Klassen und machen die Arbeit für alle angenehmer.
