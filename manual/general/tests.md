@@ -2,7 +2,7 @@
 description: Mirrors Geheimrezept.
 ---
 
-# Unit Tests
+# Tests
 
 Viele Entwickler sind überrascht, wie stabil Mirror im Vergleich zu dem ist, was sie vorher verwendet haben.
 

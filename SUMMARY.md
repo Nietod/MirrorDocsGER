@@ -32,7 +32,7 @@
   * [Lag-Kompensation](manual/general/lag-compensation.md)
   * [Clientseitige Vorhersage](manual/general/client-side-prediction.md)
   * [History Bounds](manual/general/history-bounds.md)
-  * [Unit Tests](manual/general/tests.md)
+  * [Tests](manual/general/tests.md)
   * [Netzwerkgraph](manual/general/netgraph.md)
 * [FAQ](manual/faq/README.md)
   * [Ausführungsreihenfolge](manual/faq/execution-order.md)
