@@ -1,39 +1,45 @@
 ---
-description: Mirror Secret Sauce.
+description: Mirrors Geheimrezept.
 ---
 
 # Unit Tests
 
-A lot of developers are surprised by how stable Mirror is, compared to what they've used before.
+Viele Entwickler sind überrascht, wie stabil Mirror im Vergleich zu dem ist, was sie vorher verwendet haben.
 
-This is not by coincidence. Mirror is **heavily** tested with:
+Das ist kein Zufall. Mirror wird **intensiv** getestet mit:
 
-* \> **1400** unit tests
-* \~ **80%** test coverage
+* \> **1400** Unit Tests
+* \~ **80 %** Testabdeckung
 
-{% hint style="success" %}
-As far as we know, **Mirror** has the highest test coverage of any `MonoBehaviour`networking library for **Unity**.
-{% endhint %}
-
-In other words, 80% of our code is **covered with tests** making sure that for the given input, it always produces the correct output. Here is what this means in practice:
-
-*   If you **report a bug**, we usually fix it and add a test to guarantee that it **never** happens again.
-
-    If we **accidentally** introduce a bug, odds are our tests will catch it immediately before you ever encounter it in our game.
-* We can **improve** existing functions with confidence. If a rewrite doesn't produce exactly the same output as the previous version, then our tests will catch it.
+![\[2021-06-17\] Mirror-Testabdeckung von 79,6 % einschließlich aller \[Obsoletes\]](<../../.gitbook/assets/2021-06-17 - 79,6 percent - including obsoletes.png>)
 
 {% hint style="success" %}
-As **rule** **of** **thumb**, encountering a Mirror bug in production simply means that we haven't covered that part of the code with tests yet.
+Soweit wir wissen, hat **Mirror** die höchste Testabdeckung aller `MonoBehaviour`-Netzwerkbibliotheken für **Unity**.
 {% endhint %}
 
-If you download Mirror from the **Asset Store**, then you don't see those tests because we don't want you to worry about them. They are only on **GitHub**.
+Anders gesagt sind 80 % unseres Codes **durch Tests abgedeckt**, die sicherstellen, dass er für eine gegebene Eingabe immer die korrekte Ausgabe liefert. In der Praxis bedeutet das:
 
-## Code Coverage Settings
+*   Wenn du **einen Bug meldest**, beheben wir ihn in der Regel und fügen einen Test hinzu, der garantiert, dass er **nie** wieder auftritt.
 
-To reproduce the Coverage results, use Unity's Code Coverage Package and run all of our Edit Mode tests.
+    Falls wir **versehentlich** einen Bug einbauen, fangen ihn unsere Tests höchstwahrscheinlich sofort ab, bevor du ihm in deinem Spiel überhaupt begegnest.
+* Wir können bestehende Funktionen bedenkenlos **verbessern**. Wenn eine Neufassung nicht exakt dieselbe Ausgabe liefert wie die vorherige Version, fangen unsere Tests das ab.
+
+{% hint style="success" %}
+Als **Faustregel** gilt: Wenn du während der Entwicklung auf einen Mirror-Bug stößt, haben wir diesen Teil des Codes schlicht noch nicht mit Tests abgedeckt.
+{% endhint %}
+
+![](../../.gitbook/assets/2021-05-20\_16-06-57@2x.png)
+
+Wenn du Mirror aus dem **Asset Store** herunterlädst, siehst du diese Tests nicht, weil wir dich nicht damit belasten wollen. Es gibt sie nur auf **GitHub**.
+
+## Code-Coverage-Einstellungen
+
+Um die Coverage-Ergebnisse zu reproduzieren, verwende Unitys Code-Coverage-Paket und führe alle unsere Edit-Mode-Tests aus.
+
+![Code-Coverage-Einstellungen](../../.gitbook/assets/\_SETTINGS\_.png)
 
 ## MirrorTest
 
-If you want to contribute tests or clean up existing ones, please do!
+Wenn du Tests beisteuern oder bestehende aufräumen möchtest, bitte nur zu!
 
-Check out the `MirrorEditModeTest` and `MirrorPlayModeTest` base classes. They provide some convenience functions and setup that we use for most of our tests. For example, Creating a networked object with some network components.
+Sieh dir die Basisklassen `MirrorEditModeTest` und `MirrorPlayModeTest` an. Sie stellen einige Hilfsfunktionen und ein Setup bereit, die wir für die meisten unserer Tests verwenden, zum Beispiel das Erstellen eines Netzwerkobjekts mit einigen Netzwerkkomponenten.
